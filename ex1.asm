@@ -17,16 +17,22 @@ main:
     
     bne $t3, $t4, false
     add $t0, $t1, $t2
+    j exit
 false:
     lui $t5, 0xFFFF
     ori $t5, $t5, 0xFFFF
     xor $t2, $t2, 0xFFFF
+    addi $t2, $t2, 1
+    add $t0, $t1, $t2
 
-endif:
-    sw $t0, false
+exit:
+    sw $t0, fval
+
     li $v0, 1
     move $a0, $t0
     syscall
 
     li $v0, 10
     syscall
+
+    
