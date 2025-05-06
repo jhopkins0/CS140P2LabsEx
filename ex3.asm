@@ -15,7 +15,7 @@ main:
     lw $t3, ival
     lw $t4, jval
     
-    siti $t5, $t3, 10
+    slti $t5, $t3, 10
     beq $5, $zero, false
     add $t0, $t1, $t2
     j exit
