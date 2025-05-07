@@ -24,7 +24,6 @@ loop:
 
 
 exit:   
-    sw $t1, idx
     li $v0, 1
     move $a0, $t0
     syscall
