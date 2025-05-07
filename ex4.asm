@@ -1,7 +1,7 @@
 .data
     sum:    .word   0
-    N:      .word   5
-    A:      .word   1,2,3,4,5
+    N:      .word   6
+    A:      .word   1,2,3,4,5, 6
 .text
 .globl main
 
