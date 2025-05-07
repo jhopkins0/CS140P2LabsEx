@@ -20,7 +20,7 @@ loop:
     lw $t4, 0($t5)
     add $t3, $t3, $t4
     
-    addi $ti, $t1, 1
+    addi $t1, $t1, 1
     j loop
 
 
