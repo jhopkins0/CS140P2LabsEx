@@ -1,7 +1,5 @@
 .data
-    A:      .word   5, 10, 25, 35, 45
-    sum:    .word   30
-    idx:    .word   0
+    A:      .word   1,2,3,4,5,6,7,8,9,10
 .text
 .globl main
 
